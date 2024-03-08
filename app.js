@@ -11,6 +11,9 @@ dotenv.config();
 
 app.use(express.json());
 
+const multer = require("multer");
+
+
 const { PORT, CORS_ORIGIN_WHITELIST } = process.env || {
   PORT: 8080,
   CORS_ORIGIN_WHITELIST: "http://localhost:3000",
